@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMI CALCULATOR"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"/>
+
+
+    <EditText
+        android:id="@+id/weightet"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="100dp"
+        android:hint="Weight"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp" />
+
+
+    <EditText
+        android:id="@+id/heightet"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weightet"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="30dp"
+        android:hint="Height"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp" />
+
+
+    <EditText
+        android:id="@+id/ageet"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heightet"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="30dp"
+        android:hint="Age"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/calculateBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate BMI"
+        android:layout_below="@id/ageet"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        />
+
+</RelativeLayout>
