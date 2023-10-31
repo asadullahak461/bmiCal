@@ -58,10 +58,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Calculate BMI"
-        android:layout_below="@id/ageet"
+        android:layout_below="@id/spin_kit"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="45dp"
         style="@style/Widget.MaterialComponents.Button.TextButton"
         />
+
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/spin_kit"
+        style="@style/SpinKitView.Large.Wave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_below="@id/ageet"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:visibility="invisible"
+        app:SpinKit_Color="#3F51B5" />
 
 </RelativeLayout>
